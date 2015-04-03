@@ -41,13 +41,25 @@
 
         <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MI APLICACIÓN" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="nombre de la página" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="newbie" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <Canvas>
+            <Rectangle  Width="450" Height="80" Canvas.Top="10"  >
+                <Rectangle.Fill>                    
+                    <SolidColorBrush Color="#FF00BF7F"/>                    
+                </Rectangle.Fill>
+                 </Rectangle>
+            <TextBlock Canvas.Top="0" Canvas.Left="50" Text="Bienvenido"   FontSize="70" TextAlignment="Center" Foreground="White" />
+            </Canvas>
         </StackPanel>
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,70,12,0">
+            <StackPanel>
+                
+                <Button x:Name="btnCercano" Content="lugares cercanos a ti" Background="Black" BorderBrush="#FFA6FFE1" Foreground="#FFA6FFE1" Margin="0,180,0,0" />
+                <Button x:Name="btnEventos" Content="eventos de semana santa" Background="Black" BorderBrush="#FFA6FFE1" Foreground="#FFA6FFE1" Margin="0,20,0,0" />
+                
+            </StackPanel>
         </Grid>
 
         <!--Quitar la marca de comentarios para ver una cuadrícula de alineación que

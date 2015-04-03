@@ -33,3 +33,5 @@ D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\MultipleQualifiersPerDimens
 D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\ProjectArchitectures.txt
 D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\MDILProjectFiles.xml
 D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\XapCacheFile.xml
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\ListaEventos.g.cs
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\VistaGeneralEvento.g.cs

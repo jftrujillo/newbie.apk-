@@ -1,0 +1,95 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="newbie.ListaEventos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:models="clr-namespace:newbie.Models"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        
+        <Grid.Resources>
+            <models:ListaEventosLunes x:Key="datalunes"/>
+            <models:ListaEventosMartes x:Key="datamartes"/>
+            
+        </Grid.Resources>
+        <phone:Pivot Title="Eventos de Semana Santa">
+            <phone:PivotItem Header="Lunes" >
+                
+                <phone:LongListSelector 
+                    x:Name="ListaLunes"
+                    ItemsSource="{Binding Source={StaticResource datalunes},Path=Data}" 
+                    >
+                    <phone:LongListSelector.ItemTemplate>
+                       
+                         <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                    <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                    <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B" />
+                                    <TextBlock Text="{Binding BreveDescripcion}" Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" TextWrapping="Wrap"/>
+                               
+                            
+                            </Grid>
+
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+                    
+                </phone:LongListSelector>
+                
+            </phone:PivotItem>
+            <phone:PivotItem Header="Martes">
+                <phone:LongListSelector 
+                    x:Name="ListaMartes"
+                    ItemsSource="{Binding Source={StaticResource datamartes},Path=Data}" 
+                    >
+                    <phone:LongListSelector.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B" />
+                                <TextBlock Text="{Binding BreveDescripcion}" Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" />
+
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+
+                </phone:LongListSelector>
+
+            </phone:PivotItem>
+            
+            
+            
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>
