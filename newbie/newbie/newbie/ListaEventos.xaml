@@ -35,18 +35,18 @@
                             <Grid Margin="0,10,0,10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
-                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 
                                     <TextBlock Text="{Binding Hora}" FontSize="30" />
-                                    <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B" />
-                                    <TextBlock Text="{Binding BreveDescripcion}" Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" TextWrapping="Wrap"/>
-                               
-                            
+                                    <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B" Margin="15,0,0,0" />
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" TextWrapping="Wrap" />
+
+
                             </Grid>
 
                         </DataTemplate>
@@ -66,16 +66,16 @@
                             <Grid Margin="0,10,0,10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
-                                    <RowDefinition/>
+                                    <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="150"/>
-                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Text="{Binding Hora}" FontSize="30" />
                                 <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B" />
-                                <TextBlock Text="{Binding BreveDescripcion}" Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" />
+                                <TextBox Text="{Binding BreveDescripcion}" Background="Black" Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" BorderBrush="Black" TextWrapping="Wrap" AcceptsReturn="True" />
 
 
                             </Grid>

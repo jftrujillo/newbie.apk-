@@ -1,6 +1,6 @@
-﻿<xapCache source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\newbie_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/04/2015 2:35:38 a. m.">
-  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="03/04/2015 2:35:37 a. m." />
-  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\newbie.dll" archivePath="newbie.dll" lastWriteTime="03/04/2015 2:35:37 a. m." />
+﻿<xapCache source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\newbie_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/04/2015 5:49:07 p. m.">
+  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="03/04/2015 5:30:48 p. m." />
+  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\newbie.dll" archivePath="newbie.dll" lastWriteTime="03/04/2015 5:49:07 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
@@ -13,10 +13,10 @@
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
-  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="03/04/2015 2:35:38 a. m." />
+  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="03/04/2015 5:25:47 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
   <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="02/04/2015 4:53:52 p. m." />
-  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03/04/2015 2:35:38 a. m." />
-  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="03/04/2015 2:35:38 a. m." />
-  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="03/04/2015 2:35:37 a. m." />
+  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03/04/2015 5:30:49 p. m." />
+  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="03/04/2015 5:49:07 p. m." />
+  <file source="D:\proyecto_app_movil\newbie\newbie\newbie\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="03/04/2015 5:30:48 p. m." />
 </xapCache>

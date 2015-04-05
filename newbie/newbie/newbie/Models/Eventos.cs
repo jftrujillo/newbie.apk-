@@ -14,6 +14,7 @@ namespace newbie.Models
         public String Hora { get; set; }
         public String Fecha { get; set; }
         public String ImagenLugarEvento { get; set; }
+        public String LugarDelEvento { get; set; }
 
     }
 }

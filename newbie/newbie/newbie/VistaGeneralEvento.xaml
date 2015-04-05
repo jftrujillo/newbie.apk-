@@ -26,20 +26,29 @@
        
         <!--ContentPanel. Colocar aquí el contenido adicional-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"  DataContext="{StaticResource ListaEventosLunes}"  >
-            <StackPanel>
-            <TextBlock Text="newbie" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <Canvas>
-                <Rectangle  Width="450" Height="130" Canvas.Top="10"  >
-                    <Rectangle.Fill>
-                        <SolidColorBrush Color="#FF00BF7F"/>
-                    </Rectangle.Fill>
-                </Rectangle>
-                
-                <TextBlock Canvas.Top="0" Canvas.Left="0" Text="Procesion "   FontSize="70" TextAlignment="Center" Foreground="White" />
-                    <TextBlock Text="7:00 a.m" FontSize="50" Canvas.Top="80"/>
-                    <TextBlock Text="26 de marzo" FontSize="40" Canvas.Left="220" Canvas.Top="85" Foreground="Black"/>
-                </Canvas>
-            </StackPanel>
+            <ScrollViewer 
+              Height="auto" Width="auto">
+                <StackPanel DataContext="{Binding Path=Data.[0]}">
+                    <TextBlock Text="newbie" Style="{StaticResource PhoneTextNormalStyle}"/>
+
+                    <Canvas>
+                        <Rectangle  Width="450" Height="130" Canvas.Top="10"  >
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="#FFE4DD4B"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+
+                        <TextBlock Canvas.Top="0" Canvas.Left="0" Text="{Binding NombreEvento}"   FontSize="70" TextAlignment="Center" Foreground="White" />
+                        <TextBlock Text="{Binding Hora}" FontSize="50" Canvas.Top="80"/>
+                        <TextBlock Text="{Binding Fecha}" FontSize="40" Canvas.Left="220" Canvas.Top="85" Foreground="Black"/>
+                           
+                        <Image Source="{Binding ImagenLugarEvento}" Height="250" Width="450" Canvas.Top="150" />
+                        <TextBlock Text="{Binding LugarDelEvento }" Canvas.Top="450" FontSize="30" TextWrapping="Wrap" Width="450" Foreground="Violet" />
+                        <TextBlock Width="450"  Text="{Binding  Descripcion}" Canvas.Top="550" TextWrapping="Wrap"/>
+                    </Canvas>
+
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
     </Grid>
 
