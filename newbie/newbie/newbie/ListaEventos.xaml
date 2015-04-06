@@ -20,6 +20,7 @@
         <Grid.Resources>
             <models:ListaEventosLunes x:Key="datalunes"/>
             <models:ListaEventosMartes x:Key="datamartes"/>
+            <models:DataModel x:Key="datamodel"/>
             
         </Grid.Resources>
         <phone:Pivot Title="Eventos de Semana Santa">
@@ -27,7 +28,7 @@
                 
                 <phone:LongListSelector 
                     x:Name="ListaLunes"
-                    ItemsSource="{Binding Source={StaticResource datalunes},Path=Data}" 
+                    ItemsSource="{Binding Source={StaticResource ListaEventosLunes},Path=Data}" 
                     >
                     <phone:LongListSelector.ItemTemplate>
                        

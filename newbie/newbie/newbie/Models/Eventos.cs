@@ -8,6 +8,7 @@ namespace newbie.Models
 {
     public class Eventos
     {
+        public Oid _id { get; set; }
         public String NombreEvento { get; set; }
         public String Descripcion { get; set; }
         public String BreveDescripcion { get; set; }

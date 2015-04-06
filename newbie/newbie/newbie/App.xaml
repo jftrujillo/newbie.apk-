@@ -11,6 +11,7 @@
     <Application.Resources>
         <local:LocalizedStrings xmlns:local="clr-namespace:newbie" x:Key="LocalizedStrings"/>
         <models:ListaEventosLunes x:Key="ListaEventosLunes"/>
+        <models:DataModel x:Key="dataModel"/>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
