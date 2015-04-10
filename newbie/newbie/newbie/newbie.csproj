@@ -101,12 +101,21 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\DataModel.cs" />
     <Compile Include="Models\Eventos.cs" />
+    <Compile Include="Models\ListaEventosJueves.cs" />
     <Compile Include="Models\ListaEventosLunes.cs" />
     <Compile Include="Models\ListaEventosMartes.cs" />
+    <Compile Include="Models\ListaEventosMiercoles.cs" />
+    <Compile Include="Models\ListaEventosViernes.cs" />
+    <Compile Include="Models\ListaLugares.cs" />
+    <Compile Include="Models\lugares.cs" />
     <Compile Include="Models\Oid.cs" />
+    <Compile Include="Mongo.cs" />
     <Compile Include="Net\Mongo.cs" />
+    <Compile Include="Net\MongoLugares.cs" />
+    <Compile Include="PantallaGps.xaml.cs">
+      <DependentUpon>PantallaGps.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VistaGeneralEvento.xaml.cs">
       <DependentUpon>VistaGeneralEvento.xaml</DependentUpon>
     </Compile>
@@ -115,6 +124,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistalugar.xaml.cs">
+      <DependentUpon>Vistalugar.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -130,7 +142,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PantallaGps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VistaGeneralEvento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistalugar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

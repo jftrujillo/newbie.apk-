@@ -14,7 +14,12 @@ namespace newbie.Net
 
         public interface IMongo
         {
-            void loadDocuments(List<T> documents);
+            void loadDocumentsLunes(List<T> documents);
+            void loadDocumentsMartes(List<T> documents);
+            void loadDocumentsMiercoles(List<T> documents);
+            void loadDocumentsJueves(List<T> documents);
+            void loadDocumentsViernes(List<T> documents);
+           
 
         }
 
@@ -57,7 +62,7 @@ namespace newbie.Net
         }
 
 
-        public async void findAllDocuments(IMongo iMongo)
+        public async void findAllDocumentsLunes(IMongo iMongo)
         {
 
             HttpResponseMessage msg = await client.GetAsync(new Uri(url));
@@ -65,9 +70,59 @@ namespace newbie.Net
 
             List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonArray);
 
-            iMongo.loadDocuments(data);
+            iMongo.loadDocumentsLunes(data);
 
         }
+
+        public async void findAllDocumentsMartes(IMongo iMongo)
+        {
+
+            HttpResponseMessage msg = await client.GetAsync(new Uri(url));
+            String jsonArray = msg.Content.ToString();
+
+            List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonArray);
+
+            iMongo.loadDocumentsMartes(data);
+
+        }
+
+        public async void findAllDocumentsMiercoles(IMongo iMongo)
+        {
+
+            HttpResponseMessage msg = await client.GetAsync(new Uri(url));
+            String jsonArray = msg.Content.ToString();
+
+            List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonArray);
+
+            iMongo.loadDocumentsMiercoles(data);
+
+        }
+
+        public async void findAllDocumentsJueves(IMongo iMongo)
+        {
+
+            HttpResponseMessage msg = await client.GetAsync(new Uri(url));
+            String jsonArray = msg.Content.ToString();
+
+            List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonArray);
+
+            iMongo.loadDocumentsJueves(data);
+
+        }
+
+        public async void findAllDocumentsViernes(IMongo iMongo)
+        {
+
+            HttpResponseMessage msg = await client.GetAsync(new Uri(url));
+            String jsonArray = msg.Content.ToString();
+
+            List<T> data = JsonConvert.DeserializeObject<List<T>>(jsonArray);
+
+            iMongo.loadDocumentsViernes(data);
+
+        }
+
+      
 
     }
 }

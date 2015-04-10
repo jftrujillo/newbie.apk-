@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace newbie.Models
 {
-    public class ListaEventosMartes
+    public class ListaEventosViernes
     {
         private ObservableCollection<Eventos> data;
         public ObservableCollection<Eventos> Data

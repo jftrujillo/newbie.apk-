@@ -1,0 +1,43 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="newbie.Vistalugar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="12,0,12,0">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" 
+              Height="auto" Width="auto">
+            <StackPanel x:Name="mostrar" DataContext="{StaticResource ListaLugares}" >
+                <TextBlock Text="newbie" Style="{StaticResource PhoneTextNormalStyle}"/>
+
+                <Canvas>
+                    <Rectangle  Width="450" Height="130" Canvas.Top="10"  >
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="#FFE4DD4B"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <TextBlock Canvas.Top="0" Canvas.Left="0" Text="{Binding NombreLugar}"   FontSize="70" TextAlignment="Center" Foreground="White" />
+                    
+                    <TextBlock Text="{Binding Direccion}" FontSize="40" Canvas.Left="10" Canvas.Top="85" Foreground="Black"/>
+
+                    <Image Source="{Binding ImagenLugar}" Height="250" Width="450" Canvas.Top="150" />
+                   
+                    <TextBlock Width="450"  Text="{Binding  Descripcion}" Canvas.Top="450" TextWrapping="Wrap"/>
+                </Canvas>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

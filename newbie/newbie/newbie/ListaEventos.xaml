@@ -20,17 +20,17 @@
         <Grid.Resources>
             <models:ListaEventosLunes x:Key="datalunes"/>
             <models:ListaEventosMartes x:Key="datamartes"/>
-            <models:DataModel x:Key="datamodel"/>
+            
             
         </Grid.Resources>
         <phone:Pivot Title="Eventos de Semana Santa">
             <phone:PivotItem Header="Lunes" >
                 
-                <phone:LongListSelector 
+                <ListBox 
                     x:Name="ListaLunes"
-                    ItemsSource="{Binding Source={StaticResource ListaEventosLunes},Path=Data}" 
+                    ItemsSource="{Binding Source={StaticResource ListaEventosLunes},Path=Data}" Tap="irvistageneral" 
                     >
-                    <phone:LongListSelector.ItemTemplate>
+                    <ListBox.ItemTemplate>
                        
                          <DataTemplate>
                             <Grid Margin="0,10,0,10">
@@ -51,17 +51,17 @@
                             </Grid>
 
                         </DataTemplate>
-                    </phone:LongListSelector.ItemTemplate>
+                    </ListBox.ItemTemplate>
                     
-                </phone:LongListSelector>
+                </ListBox>
                 
             </phone:PivotItem>
             <phone:PivotItem Header="Martes">
-                <phone:LongListSelector 
+                <ListBox 
                     x:Name="ListaMartes"
-                    ItemsSource="{Binding Source={StaticResource datamartes},Path=Data}" 
+                    ItemsSource="{Binding Source={StaticResource ListaEventosMartes},Path=Data}" Tap="Vistagenralmartes" 
                     >
-                    <phone:LongListSelector.ItemTemplate>
+                    <ListBox.ItemTemplate>
 
                         <DataTemplate>
                             <Grid Margin="0,10,0,10">
@@ -75,21 +75,176 @@
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Text="{Binding Hora}" FontSize="30" />
-                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B" />
-                                <TextBox Text="{Binding BreveDescripcion}" Background="Black" Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0" BorderBrush="Black" TextWrapping="Wrap" AcceptsReturn="True" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B"/>
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0"  TextWrapping="Wrap"  />
 
 
                             </Grid>
 
                         </DataTemplate>
-                    </phone:LongListSelector.ItemTemplate>
+                    </ListBox.ItemTemplate>
 
-                </phone:LongListSelector>
+                </ListBox>
 
             </phone:PivotItem>
-            
-            
-            
+
+            <phone:PivotItem Header="Miercoles">
+                <ListBox 
+                    x:Name="ListaMiercoles"
+                    ItemsSource="{Binding Source={StaticResource ListaEventosMiercoles},Path=Data}" Tap="Vistageneralmiercoles" 
+                    >
+                    <ListBox.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B"/>
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0"  TextWrapping="Wrap"  />
+
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </phone:PivotItem>
+            <phone:PivotItem Header="Jueves">
+                <ListBox 
+                    x:Name="ListaJueves"
+                    ItemsSource="{Binding Source={StaticResource ListaEventosJueves},Path=Data}" Tap="Vistageneraljueves" 
+                    >
+                    <ListBox.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B"/>
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0"  TextWrapping="Wrap"  />
+
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </phone:PivotItem>
+            <phone:PivotItem Header="Viernes">
+                <ListBox 
+                    x:Name="ListaViernes"
+                    ItemsSource="{Binding Source={StaticResource ListaEventosViernes},Path=Data}" Tap="VistaGeneralViernes" 
+                    >
+                    <ListBox.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B"/>
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0"  TextWrapping="Wrap"  />
+
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </phone:PivotItem>
+            <phone:PivotItem Header="Sabado">
+                <ListBox 
+                    x:Name="ListaSabado"
+                    ItemsSource="{Binding Source={StaticResource datamartes},Path=Data}" 
+                    >
+                    <ListBox.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B"/>
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0"  TextWrapping="Wrap"  />
+
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </phone:PivotItem>
+            <phone:PivotItem Header="Domingo">
+                <ListBox 
+                    x:Name="ListaDomingo"
+                    ItemsSource="{Binding Source={StaticResource datamartes},Path=Data}" 
+                    >
+                    <ListBox.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Margin="0,10,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Hora}" FontSize="30" />
+                                <TextBlock Text="{Binding NombreEvento}" Grid.Column="1" FontSize="30" Foreground="#FFE4DD4B"/>
+                                <TextBlock Text="{Binding BreveDescripcion}"  Grid.Row="1" Grid.Column="1" Foreground="#FFB0B0B0"  TextWrapping="Wrap"  />
+
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </phone:PivotItem>
+
+
         </phone:Pivot>
     </Grid>
 

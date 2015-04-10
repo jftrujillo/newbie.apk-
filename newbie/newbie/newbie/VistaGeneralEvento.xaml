@@ -25,10 +25,10 @@
         <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
        
         <!--ContentPanel. Colocar aquí el contenido adicional-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"  DataContext="{StaticResource ListaEventosLunes}"  >
-            <ScrollViewer 
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"  >
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" 
               Height="auto" Width="auto">
-                <StackPanel DataContext="{Binding Path=Data.[0]}">
+                <StackPanel x:Name="mostrar" >
                     <TextBlock Text="newbie" Style="{StaticResource PhoneTextNormalStyle}"/>
 
                     <Canvas>

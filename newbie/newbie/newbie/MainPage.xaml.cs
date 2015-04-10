@@ -22,6 +22,16 @@ namespace newbie
             //BuildLocalizedApplicationBar();
         }
 
+        private void irlistaeventos(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ListaEventos.xaml", UriKind.Relative));
+        }
+
+        private void irgps(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/PantallaGps.xaml", UriKind.Relative));
+        }
+
         // Código de ejemplo para compilar una ApplicationBar traducida
         //private void BuildLocalizedApplicationBar()
         //{

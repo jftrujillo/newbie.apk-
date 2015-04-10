@@ -11,7 +11,12 @@
     <Application.Resources>
         <local:LocalizedStrings xmlns:local="clr-namespace:newbie" x:Key="LocalizedStrings"/>
         <models:ListaEventosLunes x:Key="ListaEventosLunes"/>
-        <models:DataModel x:Key="dataModel"/>
+        <models:ListaEventosMartes x:Key="ListaEventosMartes"/>
+        <models:ListaEventosMiercoles x:Key="ListaEventosMiercoles"/>
+        <models:ListaEventosJueves x:Key="ListaEventosJueves"/>
+        <models:ListaEventosViernes x:Key="ListaEventosViernes"/>
+        <models:ListaLugares x:Key="ListaLugares"/>
+        
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
