@@ -1,1 +1,1 @@
-G:\proyecto_app_movil\newbie\newbie\newbie\newbie.csproj;neutral
+D:\proyecto_app_movil\newbie\newbie\newbie\newbie.csproj;neutral

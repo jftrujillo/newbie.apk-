@@ -96,14 +96,6 @@ G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\MDILProjectFiles.xml
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\XapCacheFile.xml
 D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\PantallaGps.g.cs
 D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\newbie.csprojResolveAssemblyReference.cache
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\layout.resfiles
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\layout.resfiles.intermediate
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\Resources.resfiles
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\pri.resfiles
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\pri.resfiles.intermediate
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\priconfig.xml
-D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\priconfig.xml.intermediate
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\PantallaGps.g.cs
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\Vistalugar.g.cs
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\layout.resfiles
@@ -114,3 +106,12 @@ G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\pri.resfile
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\pri.resfiles.intermediate
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\priconfig.xml
 G:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\priconfig.xml.intermediate
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\Vistalugar.g.cs
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\layout.resfiles
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\layout.resfiles.intermediate
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\Resources.resfiles
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\pri.resfiles
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\pri.resfiles.intermediate
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\priconfig.xml
+D:\proyecto_app_movil\newbie\newbie\newbie\obj\Debug\System.Net.Http\priconfig.xml.intermediate

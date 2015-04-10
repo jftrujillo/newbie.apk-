@@ -55,7 +55,7 @@ namespace newbie
                double Al = Math.Abs(Altituddef);
                double longituddef = lugaractual.Longitud - longitud;
                double Lon = Math.Abs(longituddef);
-                if ((Al <20) && (Lon <20))
+                if ((Al <0.0073d) && (Lon <0.0073d))
                {
                    dataLugares.Data.Add(documentsL.ElementAt(i));
 
